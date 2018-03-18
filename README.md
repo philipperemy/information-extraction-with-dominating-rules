@@ -1,5 +1,8 @@
-# information-extraction
-Understanding Broker Reports and generate a graph based (unsupervised learning).
+# Information Extraction
+
+Source code of the post: http://philipperemy.github.io/information-extract/
+
+Understanding articles, reports and generate a graph based (unsupervised learning).
 
 ## Get Started
 
