@@ -14,10 +14,3 @@ chmod +x init.sh
 git submodule foreach git pull origin master
 python main.py
 ```
-
-## Update the project
-
-```
-git pull
-git submodule foreach git pull origin master
-```
