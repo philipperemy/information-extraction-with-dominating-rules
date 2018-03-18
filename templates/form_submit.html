@@ -1,0 +1,22 @@
+<html>
+<head>
+    <title>Information Extraction</title>
+    <link rel=stylesheet type=text/css href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+<div id="container">
+    <div class="title">
+        <h1>Information Extraction - Ask</h1>
+    </div>
+    <div id="content">
+        <form method="post" action="{{ url_for('results') }}" target="_blank">
+            <label>Please enter your text:</label>
+            <textarea name="sentences" cols="100" rows="10"></textarea><br/>
+            <label>Activate domination rules:</label>
+            <input type="checkbox" name="domination" checked><br/><br/>
+            <input type="submit"/>
+        </form>
+    </div>
+</div>
+</body>
+</html>
