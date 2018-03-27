@@ -16,7 +16,7 @@ git clone --recursive https://github.com/reactiveai/information-extraction.git
 chmod +x init.sh
 ./init.sh
 
-python main.py
+python server.py
 ```
 
 From:
