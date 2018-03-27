@@ -41,7 +41,7 @@ def layer_filter_domination(entity_relations, known_entities):
         domination_dict[key] = rel[1] + ' ' + rel[2]
 
     # domination of order 2. subset match.
-    keys = domination_dict.keys()
+    keys = list(domination_dict.keys())
     indexes_to_discard = []
     for rel in entity_relations:
         key = ''.join(rel[0] + rel[1])
@@ -51,7 +51,7 @@ def layer_filter_domination(entity_relations, known_entities):
             max_len.append(len(domination_dict[keys[idx]]))
 
         index_to_keep = indexes[np.array(max_len).argmax()]
-        indexes_to_discard.extend(set(indexes) - set([index_to_keep]))
+        indexes_to_discard.extend(set(indexes) - {index_to_keep})
 
     for i in np.unique(np.array(indexes_to_discard)):
         del domination_dict[keys[i]]
@@ -225,5 +225,5 @@ def process_entity_relations(entity_relations, entities, apply_domination=True):
     for layer_ptr in LAYERS:
         if apply_domination:
             entity_relations, altered_count = layer_ptr(entity_relations, entities)
-            print('{} relations were altered by the layer <{}(..)>'.format(altered_count, layer_ptr.func_name))
+            print('{} relations were altered by the layer <{}(..)>'.format(altered_count, layer_ptr.__name__))
     return entity_relations

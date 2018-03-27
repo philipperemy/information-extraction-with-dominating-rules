@@ -26,11 +26,9 @@ def run(text, apply_domination=True):
 
     del relations
     import uuid
-    output_filename_png = 'reports/{}'.format(str(uuid.uuid4()))
+    output_filename_png = '/tmp/{}.png'.format(str(uuid.uuid4()))
     generate_graphviz_graph(filtered_relations, organizations, output_filename_png)
-
-    import os
-    return os.path.dirname(os.path.realpath(__file__)) + '/' + output_filename_png + '.png'  # dirty but okay.
+    return output_filename_png
 
 
 if __name__ == '__main__':

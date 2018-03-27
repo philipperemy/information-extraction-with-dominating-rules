@@ -3,6 +3,7 @@ from __future__ import print_function
 import os
 from subprocess import Popen
 from sys import stderr
+from uuid import uuid4
 
 
 def generate_graphviz_graph(entity_relations, organizations, output_filename='out'):
@@ -26,15 +27,17 @@ def generate_graphviz_graph(entity_relations, organizations, output_filename='ou
             graph.append('"{}" [color="0.650 0.200 1.000"];'.format(entity))
     graph.append('}')
 
-    with open('out.dot', 'w') as output_file:
+    uid = str(uuid4())
+    output_dot_filename = '/tmp/out_{}.dot'.format(uid)
+    with open(output_dot_filename, 'w') as output_file:
         output_file.writelines(graph)
 
-    command = 'dot -Tpng out.dot -o {}.png'.format(output_filename)
+    command = 'dot -Tpng {} -o {}'.format(output_dot_filename, output_filename)
     print('Executing command = {}'.format(command))
     dot_process = Popen(command, stdout=stderr, shell=True)
     dot_process.wait()
     assert not dot_process.returncode, 'ERROR: Call to dot exited with a non-zero code status.'
-    os.remove('out.dot')
+    os.remove(output_dot_filename)
 
 
 if __name__ == '__main__':
