@@ -31,13 +31,13 @@ Moodstocks' "on-device image recognition" software for smartphones will be phase
 "Ever since we started Moodstocks, our dream has been to give eyes to machines by turning cameras into smart sensors able to make sense of their surroundings," Moodstocks said in a statement on its site. "Our focus will be to build great image recognition tools within Google, but rest assured that current paying Moodstocks customers will be able to use it until the end of their subscription."
 ```
 
-To (without domination decision rules):
+To (without dominating decision rules):
 
 <p align="center">
   <img src="http://philipperemy.github.io/information-extract/hello2.png">
 </p>
 
-And (with domination decision rules):
+And (with dominating decision rules):
 
 <p align="center">
   <img src="http://philipperemy.github.io/information-extract/hello.png">
