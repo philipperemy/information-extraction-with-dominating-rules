@@ -4,6 +4,11 @@ Source code of the post: http://philipperemy.github.io/information-extract/
 
 Understanding articles, reports and generate a graph based (unsupervised learning).
 
+
+<p align="center">
+  <img src="static/img_1.png">
+</p>
+
 ## Get Started
 
 ```
