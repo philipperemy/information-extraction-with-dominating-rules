@@ -9,7 +9,7 @@ Understanding articles, reports and generate a graph based (unsupervised learnin
   <img src="static/img_1.png">
 </p>
 
-## Get Started
+## Get Started (Linux/Mac OS)
 
 ```
 git clone --recursive https://github.com/reactiveai/information-extraction.git
