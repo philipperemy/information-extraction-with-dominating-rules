@@ -1,3 +1,6 @@
 [submodule "ner"]
 	path = ner
 	url = git@github.com:philipperemy/Stanford-NER-Python.git
+[submodule "openie"]
+	path = openie
+	url = git@github.com:philipperemy/Stanford-OpenIE-Python.git
