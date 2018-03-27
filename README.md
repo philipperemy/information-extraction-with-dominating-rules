@@ -7,10 +7,14 @@ Understanding articles, reports and generate a graph based (unsupervised learnin
 ## Get Started
 
 ```
-git clone https://github.com/reactiveai/information-extraction.git
-git submodule update --init --recursive
+git clone --recursive https://github.com/reactiveai/information-extraction.git
+
+# run this if you forgot to add --recursive flag when git cloning.
+# git submodule update --init --recursive
+# git submodule foreach git pull origin master
+
 chmod +x init.sh
 ./init.sh
-git submodule foreach git pull origin master
+
 python main.py
 ```
