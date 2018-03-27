@@ -32,5 +32,5 @@ def run(text, apply_domination=True):
 
 
 if __name__ == '__main__':
-    filename = '/Users/philipperemy/PycharmProjects/information-extraction/reports/business_insider_google_buys_moodstocks.txt'
+    filename = 'business_insider_google_buys_moodstocks.txt'
     print(run(filename))
