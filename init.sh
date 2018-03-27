@@ -4,6 +4,4 @@ touch openie/__init__.py
 cd ner
 chmod +x init.sh
 ./init.sh
-cd ../openie
-chmod +x init.sh
-./init.sh
+cd ..
