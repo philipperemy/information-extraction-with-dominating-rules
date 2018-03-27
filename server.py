@@ -25,7 +25,8 @@ def results():
         print('Received text = {}'.format(text))
         png_full_filename = run(text, apply_domination)
         return send_file(png_full_filename, mimetype='image/gif')
-    except Exception:
+    except Exception as e:
+        print(e)
         ret = 'Hit the endpoint like this http://127.0.0.1:5000?q=QUERY where QUERY is the text' \
               ' such as : Google bought IBM for 10 dollars.'
 

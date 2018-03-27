@@ -1,6 +1,3 @@
-[submodule "Stanford-NER-Python"]
-	path = ner
-	url = https://github.com/philipperemy/Stanford-NER-Python.git
 [submodule "Stanford-OpenIE-Python"]
 	path = openie
 	url = https://github.com/philipperemy/Stanford-OpenIE-Python.git
