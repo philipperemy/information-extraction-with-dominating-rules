@@ -14,10 +14,6 @@ Understanding articles, reports and generate a graph based (unsupervised learnin
 ```
 git clone --recursive https://github.com/philipperemy/information-extraction.git
 
-# run this if you forgot to add --recursive flag when git cloning.
-# git submodule update --init --recursive
-# git submodule foreach git pull origin master
-
 ./init.sh
 
 virtualenv -p python3.6 venv3.6
@@ -26,6 +22,12 @@ source venv3.6/bin/activate
 pip install -r requirements.txt
 python server.py
 ```
+
+Also make sure that you can run the examples of both:
+- https://github.com/philipperemy/Stanford-OpenIE-Python
+- https://github.com/philipperemy/Stanford-NER-Python
+
+Especially, make sure that GraphViz is installed beforehand. Try to run the dot command to see if this is the case. If not, run `sudo apt-get install graphviz` if you're running on Ubuntu (`brew install graphviz` on Mac OS).
 
 From:
 
