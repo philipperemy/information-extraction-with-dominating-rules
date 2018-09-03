@@ -18,7 +18,6 @@ git clone --recursive https://github.com/philipperemy/information-extraction.git
 # git submodule update --init --recursive
 # git submodule foreach git pull origin master
 
-chmod +x init.sh
 ./init.sh
 
 virtualenv -p python3.6 venv3.6
