@@ -109,7 +109,7 @@ def match_entity(initial_candidate, known_entities):
         acronym = filter(str.isupper, candidate)
         dict_acronyms = [[i, filter(str.isupper, v)] for i, v in enumerate(known_entities) if
                          len(v.split()) > 1 or v.upper() == v]
-        for key, val in dict(dict_acronyms).iteritems():
+        for key, val in dict(dict_acronyms).items():
             if val == acronym:
                 return known_entities[key]
 
