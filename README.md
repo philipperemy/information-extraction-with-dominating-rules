@@ -12,7 +12,7 @@ Understanding articles, reports and generate a graph based (unsupervised learnin
 ## Get Started (Linux/Mac OS)
 
 ```
-git clone --recursive https://github.com/reactiveai/information-extraction.git
+git clone --recursive https://github.com/philipperemy/information-extraction.git
 
 # run this if you forgot to add --recursive flag when git cloning.
 # git submodule update --init --recursive
