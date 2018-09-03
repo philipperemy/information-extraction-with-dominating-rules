@@ -21,6 +21,10 @@ git clone --recursive https://github.com/philipperemy/information-extraction.git
 chmod +x init.sh
 ./init.sh
 
+virtualenv -p python3.6 venv3.6
+source venv3.6/bin/activate
+
+pip install -r requirements.txt
 python server.py
 ```
 
