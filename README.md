@@ -11,7 +11,7 @@ Understanding articles, reports and generate a graph based (unsupervised learnin
 
 ## Get Started (Linux/Mac OS)
 
-```
+```bash
 git clone --recursive https://github.com/philipperemy/information-extraction.git
 
 ./init.sh
